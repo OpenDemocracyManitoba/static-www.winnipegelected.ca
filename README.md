@@ -4,6 +4,12 @@ Static copy of **www.winnipegelected.ca**, taken from olddroplet (`odm-nginx-rub
 
 `site/` is the served web root as it was on disk (118 files), minus the files listed below. No crawl was needed: this site was already static.
 
+## Sunset
+
+**Sunset 2026-10-25; the archive lives in this repo.** Open Democracy Manitoba decided on 2026-10-24 not to host www.winnipegelected.ca after the olddroplet migration (Phase B decision D5). The site was not moved to Cloudflare; its last host was olddroplet, which is being retired. Its DNS records are removed from the domain's DigitalOcean zone before the droplet is destroyed. Whether the domain itself is renewed is up to its registrant.
+
+To view the archive, serve `site/` as static files (for example `python3 -m http.server -d site`).
+
 ## Serving
 
 Serve `site/` as static files from the domain root.
